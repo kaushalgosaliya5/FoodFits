@@ -1,0 +1,262 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar9"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="90dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+                <!-- A CardView that contains a TextView -->
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/breakfast"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPaddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:text="Break Fast"
+                            android:src="@drawable/coffeemaker"
+                            android:gravity="center"
+                            android:id="@+id/info_text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="126dp"
+                            android:paddingBottom="0dp"
+
+                            />
+
+                        <TextView
+                            android:text="Breakfast"
+                            android:gravity="center"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="25dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- A CardView that contains a TextView -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/lunch"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:contentPaddingBottom="9dp"
+                    android:layout_marginLeft="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:text="Break Fast"
+                            android:src="@drawable/noodles"
+                            android:gravity="center"
+                            android:id="@+id/info_text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="126dp"
+                            android:paddingBottom="0dp"
+
+                            />
+
+                        <TextView
+                            android:text="Lunch"
+                            android:gravity="center"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="25dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="192dp">
+                <!-- A CardView that contains a TextView -->
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dinner"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:text="Break Fast"
+                            android:src="@drawable/dinner"
+                            android:gravity="center"
+                            android:id="@+id/info_text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="126dp"
+                            android:paddingBottom="0dp"
+
+                            />
+
+                        <TextView
+                            android:text="Dinner"
+                            android:gravity="center"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="25dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- A CardView that contains a TextView -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/snacks"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    card_view:cardCornerRadius="4dp">
+                    <!--card_view:contentPadding="10dp"-->
+                    <!--card_view:cardCornerRadius="4dp">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:text="Break Fast"
+                            android:src="@drawable/cookies"
+                            android:gravity="center"
+                            android:id="@+id/info_text4"
+                            android:layout_width="match_parent"
+                            android:layout_height="126dp"
+                            android:paddingBottom="0dp"
+
+                            />
+
+                        <TextView
+                            android:text="Snacks"
+                            android:gravity="center"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="25dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:weightSum="2"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="192dp">-->
+                <!--&lt;!&ndash; A CardView that contains a TextView &ndash;&gt;-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_weight="1"-->
+                    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:id="@+id/card_view5"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--card_view:cardCornerRadius="4dp">-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+                <!--&lt;!&ndash; A CardView that contains a TextView &ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView-->
+                    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:id="@+id/card_view6"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--card_view:cardCornerRadius="4dp">-->
+                    <!--&lt;!&ndash;card_view:contentPadding="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;card_view:cardCornerRadius="4dp">&ndash;&gt;-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

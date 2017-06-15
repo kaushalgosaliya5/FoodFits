@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.floatinglabels.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:text="      Food Fit is an fitness and food tracking application with our app you can track daily steps and monitor your calorie. To know more about us. Visit our website
+        http://sen6.herokuapp.com/"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_gravity="center"/>
+</FrameLayout>

@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:navigationIcon="?attr/homeAsUpIndicator"
+            >
+
+            <Button
+                android:text="ADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/btnaddd22"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/foodname"
+            android:text="Food Name       "
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="6"
+                    android:textSize="18dp"
+                    android:text="Protein   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/proteintext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="6"
+                    android:textSize="20dp"
+                    android:text="Fat       "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/fattext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Iron      "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/irontext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Carbo-H   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/carbotext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Calories  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/caloriestext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Fiber     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/fibertext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Vitamin A "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/vitatext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Vitamin C "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/vitctext"
+                    android:text="0"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="7"
+                    android:textSize="20dp"
+                    android:text="Serving Grams "
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/servetext"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.floatinglabels.Fragment_custom">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:text="Add New Meal"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/btnaddmeal"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentEnd="true"
+
+        />
+    <ListView
+        android:id="@+id/foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/btnaddmeal"
+        />
+
+
+</RelativeLayout>

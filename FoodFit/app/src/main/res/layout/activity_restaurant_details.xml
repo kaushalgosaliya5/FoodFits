@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.androidhive.floatinglabels.RestaurantDetails">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar11"
+            android:layout_width="match_parent"
+            android:title="Fit"
+            android:layout_height="?attr/actionBarSize"
+            android:navigationIcon="?attr/homeAsUpIndicator"
+            android:background="?attr/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:background="@drawable/rest">
+
+       <!--<ImageView-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:layout_width="fill_parent"-->
+           <!---->
+           <!--android:src="@drawable/rest"/>-->
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+
+        android:background="#eaeaea"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_restur"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            card_view:cardUseCompatPadding="true"
+
+            card_view:cardCornerRadius="5dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Hotel Name"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/rname"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+
+            android:weightSum="2"
+
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="city"
+            android:fontFamily="serif"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:id="@+id/rcity"
+            android:gravity="center|end"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="zip-code"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:id="@+id/rzipcode"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#eaeaea"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_restur2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                card_view:cardUseCompatPadding="true"
+
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_weight="2"
+                            android:fontFamily="serif"
+                            android:text="Phone "
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"/>
+
+                        <TextView
+                            android:text="Phone"
+                            android:textSize="20dp"
+                            android:fontFamily="serif"
+                            android:layout_weight="1"
+                            android:id="@+id/rphone"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_weight="2"
+                            android:fontFamily="serif"
+                            android:text="Email "
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"/>
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:text="Email"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:id="@+id/remail"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_weight="2"
+                            android:fontFamily="serif"
+                            android:text="Website "
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="#eaeaea"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_restur3"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_weight="2"
+                            android:fontFamily="serif"
+                            android:text="Address"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip"
+                            android:id="@+id/textView9" />
+
+                        <TextView
+                            android:text="Address"
+                            android:textSize="20dp"
+                            android:layout_weight="1"
+                            android:id="@+id/raddress"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:paddingBottom="2dip" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="View Menu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/FoodDetails"
+                android:fontFamily="serif"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+            <!--<Button-->
+                <!--android:id="@+id/FoodDetails"-->
+                <!--android:text="Food Details"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+      </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

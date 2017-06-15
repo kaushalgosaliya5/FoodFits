@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.floatinglabels.Fragment_search">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="food name..."
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignBaseline="@+id/btnsearch"
+        android:layout_alignBottom="@+id/btnsearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnsearch"
+        android:layout_toLeftOf="@+id/btnsearch" />
+
+    <ListView
+        android:id="@+id/foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/btnsearch"
+         />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/btnsearch"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/mybutton"
+
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentEnd="true"
+
+        />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cpv_color="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cpv_indeterminate="true" />
+
+</RelativeLayout>

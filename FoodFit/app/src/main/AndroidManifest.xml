@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.floatinglabels">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logoapp"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".LoginPage"
+            android:label="Login" >
+
+
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="FoodFit"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".ui.Activity_Main"
+            android:label="Step Counter"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" >
+
+        </activity>
+        <activity android:name=".AppActivity" android:label="@string/app_name" />
+        <activity android:name=".Register" android:label="Sign-In" />
+        <activity android:name=".UserProfile1" android:label="UserProfile" />
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".FoodDetail1" />
+        <activity android:name=".AddFood" />
+        <activity android:name=".displaycalories" android:label="Account Created" />
+        <activity android:name=".Activityfood" android:label="@string/add_breakfast" />
+        <activity android:name=".ProgressBar" />
+        <activity android:name=".FoodTracker" />
+        <activity android:name=".BreakfastDetail" />
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".Forgot_password" />
+        <activity android:name=".MainRestaur" />
+        <activity android:name=".RestaurantDetails" />
+        <activity android:name=".FoodInformation" />
+        <activity android:name=".ShowDetail" />
+        <activity android:name=".ReportActivity" />
+
+        <activity android:name=".caloriecounter" android:label="BMI Calculator" />
+        <activity android:name=".splashActivity">
+            <intent-filter  android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AppUpdatedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".SensorListener" />
+        <service
+            android:name=".widget.DashClock"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2" />
+            <meta-data
+                android:name="worldReadable"
+                android:value="true" />
+            <meta-data
+                android:name="description"
+                android:value="Displays the steps taken today" />
+        </service>
+
+        <activity
+            android:name=".widget.WidgetConfig"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".widget.Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget" />
+        </receiver>
+
+        <service android:name=".widget.WidgetUpdateService" />
+
+        <receiver
+            android:name=".PowerReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Basic"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".RestaurantLocation"
+            android:label="@string/title_activity_restaurant_location"
+            android:theme="@style/MyMaterialTheme"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".LunchDetail"
+            android:label="Lunch"></activity>
+        <activity
+            android:name=".DinnerDetail"
+            android:label="Dinner"></activity>
+        <activity
+            android:name=".SnacksDetail"
+            android:label="Snacks"></activity>
+
+
+    </application>
+
+</manifest>

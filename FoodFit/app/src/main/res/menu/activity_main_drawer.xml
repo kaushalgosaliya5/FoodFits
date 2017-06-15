@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+
+
+        <item
+            android:id="@+id/fitness_tracker"
+            android:icon="@drawable/fitness"
+            android:title="Fitness Tracker" />
+        <item
+            android:id="@+id/food_tracker"
+            android:icon="@drawable/watermelon"
+            android:title="Food Tracker" />
+        <item
+            android:id="@+id/restaurant"
+            android:icon="@drawable/bakery"
+            android:title="Restaurant" />
+
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/report"
+            android:title="Report" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/aboutus"
+            android:title="About" />
+        <item
+            android:id="@+id/editPro"
+            android:icon="@drawable/user"
+            android:title="Edit profile" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

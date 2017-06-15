@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FBE9E7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:layout_marginLeft="50dp"
+        android:id="@+id/donut_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:donut_progress="30"/>
+-->
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_gravity="center"
+        android:background="#DCEDC8"
+        android:layout_margin="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        custom:arc_bottom_text="Daily Step"/>
+
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress2"
+        android:layout_gravity="center"
+        android:background="#DCEDC8"
+        android:layout_margin="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        custom:arc_bottom_text="Daily Step"/>
+</LinearLayout>
